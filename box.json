@@ -1,0 +1,12 @@
+{
+    "name":"HTML to PDF Using CFML and Playwright",
+    "description":"Example using Playwright for Java to render HTML and write to PDF with CFML.",
+    "version":"1.0.0",
+    "author":"@tonyjunkes",
+    "scripts":{
+        "buildDeps": "!mvn dependency:copy-dependencies -DoutputDirectory=lib",
+        "installBrowser": "!mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args=\"install chromium\"",
+        "installDeps": "!mvn exec:java -e -D exec.mainClass=com.microsoft.playwright.CLI -D exec.args=\"install-deps chromium\"",
+        "postInstall": "run-script buildDeps && run-script installBrowser && run-script installDeps"
+    }
+}

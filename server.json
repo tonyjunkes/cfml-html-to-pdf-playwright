@@ -1,0 +1,11 @@
+{
+    "name":"cfml-html-to-pdf-playwright",
+    "app":{
+        "cfengine":"adobe@2023"
+    },
+    "web":{
+        "http":{
+            "port":8520
+        }
+    }
+}

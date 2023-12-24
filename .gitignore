@@ -1,0 +1,10 @@
+# IDE
+.vscode
+
+# Other
+WEB-INF
+logs
+lib
+output
+driver/*
+!driver/.gitkeep
